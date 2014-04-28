@@ -1,0 +1,23 @@
+{
+  "name": "doublemoose",
+  "version": "0.0.0",
+  "description": "Automation scripts for my photoframe computer",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ericz/doublemoose.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/ericz/doublemoose/issues"
+  },
+  "homepage": "https://github.com/ericz/doublemoose",
+  "dependencies": {
+    "express": "~4.1.1"
+  }
+}

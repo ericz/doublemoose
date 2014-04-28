@@ -23,6 +23,7 @@ Func PrepareDellUtility()
     If WinExists("Application: Fatal Error") Then
       ControlClick("Application: Fatal Error", "", "OK")
       Return PrepareDellUtility()
+    EndIf
   EndIf
   $Pid = WinGetProcess($window)
   WinMove($window, "", 0, 0)

@@ -11,7 +11,7 @@ app.post('/lights', function(req, res){
 });
 
 // Git pull self
-app.post('/gitPull', function(req, res){
+app.post('/update', function(req, res){
   res.send(200);
   var script = spawn('git pull');
 });

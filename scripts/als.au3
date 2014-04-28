@@ -8,7 +8,7 @@ Func Main()
   Local $window = PrepareVectorMagic()
   ; Click ALS
   MouseClick("", 204, 166)
-  WinSetState($window, "", @SW_HIDE)
+  ProcessClose($window)
   Exit(0)
 EndFunc
 

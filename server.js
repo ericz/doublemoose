@@ -6,6 +6,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.post('/lights', function(req, res){
   var script = spawn('./AutoIt3.exe', ['scripts/als.au3']);
+  res.send('ok')
 });
 
 app.listen(80);

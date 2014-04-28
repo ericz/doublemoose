@@ -19,7 +19,10 @@ Func PrepareDellUtility()
     $window = WinActivate($DELL_UTILITY_APP)
   Else
     Run($DELL_UTILITY_PATH)
-    $window = WinWaitActive($DELL_UTILITY_APP)
+    $window = WinWaitActive($DELL_UTILITY_APP, "", 1)
+    If WinExists("Application: Fatal Error") Then
+      ControlClick("Application: Fatal Error", "", "OK")
+      Return PrepareDellUtility()
   EndIf
   $Pid = WinGetProcess($window)
   WinMove($window, "", 0, 0)

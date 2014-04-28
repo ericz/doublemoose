@@ -7,7 +7,7 @@ Global $Pid
 Func Main()
   Local $window = PrepareDellUtility()
   ; Click ALS
-  MouseClick("", 204, 166, 1, 0)
+  MouseClick("", 204, 166, 1, 5)
   ProcessClose($Pid)
   Exit(0)
 EndFunc
